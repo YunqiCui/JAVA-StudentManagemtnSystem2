@@ -72,17 +72,4 @@ public class StudentDAO {
         }
         return rs;
     }
-
-    public ResultSet searchStudent(String sql){
-        try{
-            ps = ct.prepareStatement(sql);
-            rs = ps.executeQuery();
-
-        }catch (Exception e){
-            e.printStackTrace();
-        }finally {
-//            this.close();
-        }
-        return rs;
-    }
 }

@@ -13,9 +13,7 @@ public class UpdateDialog extends JDialog implements ActionListener{
     JButton jb1, jb2;
     JTextField jtf1, jtf2, jtf3, jtf4, jtf5, jtf6, jtf7;
     JPanel jp1, jp2, jp3;
-    Connection ct = null;
-    ResultSet rs = null;
-    PreparedStatement ps = null;
+
 
     //owner它的父窗口;title窗口名;model指定是模态窗口，还是非模态
     public UpdateDialog(Frame owner, String title, boolean modal, MyStudentModel ms, int rownumber) {

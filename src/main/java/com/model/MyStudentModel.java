@@ -13,15 +13,10 @@ public class MyStudentModel extends AbstractTableModel{
 
     Vector rowdata, colnames;
 
-//    public MyStudentModel(String sql){
-//
-//
-//    }
     public void queryStudent(String sql,String [] paras){
 
         colnames = new Vector();
         rowdata = new Vector();
-
 
         colnames.add("stuid");
         colnames.add("firstname");

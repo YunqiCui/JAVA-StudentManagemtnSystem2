@@ -5,10 +5,6 @@ import com.model.MyStudentModel;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-
 
 public class MainFrame extends JFrame implements ActionListener {
 
@@ -19,8 +15,6 @@ public class MainFrame extends JFrame implements ActionListener {
     JButton jb1, jb2, jb3, jb4;
     JTextField jtf;
     MyStudentModel ms = null;
-
-
 
     public static void main(String[] args) {
         MainFrame mf = new MainFrame();

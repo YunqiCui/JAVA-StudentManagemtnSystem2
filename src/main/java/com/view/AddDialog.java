@@ -6,20 +6,17 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 
 public class AddDialog extends JDialog implements ActionListener {
     JLabel jl1, jl2, jl3, jl4, jl5, jl6, jl7;
     JButton jb1, jb2;
     JTextField jtf1, jtf2, jtf3, jtf4, jtf5, jtf6, jtf7;
     JPanel jp1, jp2, jp3;
-    Connection ct = null;
-    PreparedStatement ps = null;
 
     //owner它的父窗口;title窗口名;model指定是模态窗口，还是非模态
+//    public static void main(String[] args) {
+//        AddDialog ad = new AddDialog();
+//    }
     public AddDialog(Frame owner, String title, boolean modal) {
         super(owner, title, modal);//调用父类构造方法，达到模式对话框效果
         jl1 = new JLabel("Student Id");
